@@ -1,18 +1,25 @@
-#include "main.h"
-/**
- * print_alphabet - a function that prints the alphabet, in lowercase
- *
- * Return: Always 0 (Succes)
- */
-void print_alphabet(void)
+int main(void)
 {
-	
+    /* Declare a variable and initialize it with the first member of 
+       the range [a - z] 
+    */
 
-int n;
+    char alphabet = 'a';
 
-	for (n = 'a'; n <= 'z'; n++)
-	{
-		_putchar(n);
-	}
-	_putchar('\n');
+     /* check to see if the current value of your variable is less than 
+         or the same as the last member (z) of the given range. While 
+         the value is less, go ahead and print the value 
+      */
+
+    while (alphabet <= 'z')
+    {
+        // print the value of the variable 
+        putchar(alphabet);
+
+        // increment the variable (ie: a becomes b)
+        alphabet++;
+    }
+
+    putchar('\n');
+    return (0);
 }
