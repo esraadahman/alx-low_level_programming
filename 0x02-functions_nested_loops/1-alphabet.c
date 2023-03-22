@@ -1,25 +1,21 @@
-int main(void)
+#include "main.h"
+
+/**
+ * print_alphabet - Entry point
+ * Return:0
+ */
+
+void print_alphabet(void)
 {
-    /* Declare a variable and initialize it with the first member of 
-       the range [a - z] 
-    */
+	char c = 'a';
 
-    char alphabet = 'a';
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
 
-     /* check to see if the current value of your variable is less than 
-         or the same as the last member (z) of the given range. While 
-         the value is less, go ahead and print the value 
-      */
+	}
+	_putchar('\n');
 
-    while (alphabet <= 'z')
-    {
-        // print the value of the variable 
-        putchar(alphabet);
-
-        // increment the variable (ie: a becomes b)
-        alphabet++;
-    }
-
-    putchar('\n');
-    return (0);
 }
+
