@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 C = gcc
 SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
